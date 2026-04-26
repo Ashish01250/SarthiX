@@ -48,6 +48,12 @@ Thumbs.db
 *.sw?
 
 # ======================
+# 🚛 Heavy 3D Assets
+# ======================
+src/assets/peterbilt_379_optimus_prime.glb
+
+
+# ======================
 # ⚙️ Misc
 # ======================
 .tmp/

@@ -1,8 +1,10 @@
 import { useState, useEffect, useRef } from "react";
+import { useGLTF } from "@react-three/drei";
 import truckSound from "./assets/trucksound.mp3";
 import truckSvg from "./assets/untitled.png";
 
 const TruckLoader = ({ onComplete }) => {
+  useGLTF.preload("/truck-optimized.glb");
   const [phase, setPhase] = useState("idle");
   const [particles, setParticles] = useState([]);
   const audioRef = useRef(null);

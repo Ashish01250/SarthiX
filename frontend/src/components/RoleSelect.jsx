@@ -177,7 +177,6 @@ function RoleSelect({ onSelect }) {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            gap: 48,
             padding: "0 24px",
             width: "100%",
             maxWidth: 860,
