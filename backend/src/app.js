@@ -18,7 +18,9 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173", // Vite dev
-      "http://localhost:4173", // Vite preview
+      "http://localhost:4173",
+      "https://sarathi-x.vercel.app",
+      /\.vercel\.app$/, // Vite preview
     ],
     credentials: true, // ← required for Clerk Authorization header
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
