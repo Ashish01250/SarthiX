@@ -27,7 +27,7 @@ export const useUserSync = () => {
       try {
         const token = await getToken();
 
-        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}}/users/sync`, {
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/users/sync`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
